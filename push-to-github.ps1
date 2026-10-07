@@ -7,12 +7,14 @@
 
 $ErrorActionPreference = 'Stop'
 $repoName = 'cuhk-course-planner'
-$owner    = Read-Host "GitHub 用户名（例如 unko-wn）"
-$visibility = Read-Host "仓库可见性 public/private（你之前选了 public，直接回车即可）"
+$owner    = Read-Host 'GitHub 用户名（例如 unko-wn）'
+$visibility = Read-Host '仓库可见性 public/private（你之前选了 public，直接回车即可）'
 if ([string]::IsNullOrWhiteSpace($visibility)) { $visibility = 'public' }
 
 $url = "https://github.com/$owner/$repoName.git"
-Write-Host "`n将推送到 $url`n" -ForegroundColor Cyan
+Write-Host ''
+Write-Host "将推送到 $url" -ForegroundColor Cyan
+Write-Host ''
 
 # 1) 若还没有 remote，加上
 if (-not (git remote get-url origin 2>$null)) {
@@ -25,10 +27,12 @@ if (-not (git remote get-url origin 2>$null)) {
 git push -u origin main
 
 if ($LASTEXITCODE -eq 0) {
-    Write-Host "`n完成：https://github.com/$owner/$repoName" -ForegroundColor Green
+    Write-Host ''
+    Write-Host "完成：https://github.com/$owner/$repoName" -ForegroundColor Green
 } else {
-    Write-Host "`n推送失败。常见原因与处理：" -ForegroundColor Yellow
+    Write-Host ''
+    Write-Host '推送失败。常见原因与处理：' -ForegroundColor Yellow
     Write-Host "  - 仓库不存在：先去 https://github.com/new 建一个空的 $repoName"
-    Write-Host "  - 认证失败：用 Personal Access Token 当密码，或 `git config --global credential.helper manager`"
-    Write-Host "  - 远端已有提交：git pull --rebase origin main 后重试"
+    Write-Host '  - 认证失败：用 Personal Access Token 当密码，或先执行 git config --global credential.helper manager'
+    Write-Host '  - 远端已有提交：先 git pull --rebase origin main 再重试'
 }
