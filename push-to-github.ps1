@@ -1,4 +1,4 @@
-# 把本仓库推送到 GitHub
+﻿# 把本仓库推送到 GitHub
 # 用法：在**你自己的 PowerShell 窗口**里运行（不要在受限沙箱里跑，沙箱会拦截 TLS 凭据）
 #   powershell -ExecutionPolicy Bypass -File .\push-to-github.ps1
 #
