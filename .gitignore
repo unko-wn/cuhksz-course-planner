@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------- secrets
+# SIS 登录会话 Cookie（含 PS_TOKEN / JSESSIONID）：绝对不要提交
+cuhk-sis-scraper/_cookies.json
+*.cookies.json
+# 持久化浏览器 profile：含 Cookies / Login Data / Local State 等凭据
+cuhk-sis-scraper/_browser_profile/
+_cdp_profile_test2/
+*_browser_profile/
+*_profile_test*/
+
+# ---------------------------------------------------------------- large/raw
+# 官方开课表 PDF 与 31 份培养方案 PDF：受版权保护，不入库
+补充材料/
+# build/pdf_rows.py 的中间产物（需要自备 PDF 才能重新生成）
+build/_pdf_p*.json
+build/_pdf_p*_report.json
+# SIS 导出的原始 Excel（可自行从 SIS 抓取）
+cuhk-sis-scraper/output/
+cuhk-sis-scraper/data/
+cuhk-sis-scraper/data_supplement/
+cuhk-sis-scraper/cache/
+cuhk-sis-scraper/_catalog.json
+cuhk-sis-scraper/_*.json
+cuhk-sis-scraper/_*.csv
+cuhk-sis-scraper/_*.log
+cuhk-sis-scraper/_*.html
+cuhk-sis-scraper/catalog_index.json
+
+# ---------------------------------------------------------------- misc
+__pycache__/
+*.py[cod]
+node_modules/
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# 过期截图（界面已改版，保留会造成误导）
+v3-custom.png
+v4-select.png
+v4-timetable.png

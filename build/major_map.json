@@ -1,0 +1,49 @@
+{
+  "_comment": [
+    "按学院-专业筛选所需的官方专业表。",
+    "来源：补充材料/ 下 31 份培养方案 PDF（每份一个专业），专业名取自 PDF 的 Programme Title；",
+    "college 取自用户提供的学院-专业对照图，其中 金融工程 按用户要求归入 SDS。",
+    "tag = 该专业在课程目录里对应的标签：优先复用已有的『特殊专业/方向』缩写，",
+    "      没有现成缩写时从专业名取首字母（并保证与课程代码前缀一致，否则该专业会筛不出课）。",
+    "catalog 字段是匹配到的课程数，仅作文档用途，界面不读它。"
+  ],
+  "majors": [
+    { "college": "SME", "zh": "大数据管理与应用", "en": "Big Data Management and Applications", "tag": "BDMA", "catalog": 3 },
+    { "college": "SME", "zh": "经济学", "en": "Economics", "tag": "ECO", "catalog": 19 },
+    { "college": "SME", "zh": "金融学", "en": "Finance", "tag": "FIN", "catalog": 22 },
+    { "college": "SME", "zh": "国际商务", "en": "Global Business Studies", "tag": "GBS", "catalog": 3 },
+    { "college": "SME", "zh": "市场营销", "en": "Marketing and Communication", "tag": "MKT", "catalog": 9 },
+    { "college": "SME", "zh": "会计学", "en": "Professional Accountancy", "tag": "ACT", "catalog": 9 },
+
+    { "college": "SSE", "zh": "化学", "en": "Chemistry", "tag": "CHEM", "catalog": 3 },
+    { "college": "SSE", "zh": "电子与计算机工程", "en": "Electrical and Computer Engineering", "tag": "ECE", "catalog": 20 },
+    { "college": "SSE", "zh": "电子信息工程", "en": "Electronic Information Engineering", "tag": "EIE", "catalog": 18 },
+    { "college": "SSE", "zh": "材料科学与工程", "en": "Materials Science and Engineering", "tag": "MSE", "catalog": 4 },
+    { "college": "SSE", "zh": "数学与应用数学", "en": "Mathematics and Applied Mathematics", "tag": "MATH", "catalog": 11 },
+    { "college": "SSE", "zh": "新能源科学与工程", "en": "New Energy Science and Engineering", "tag": "NSE", "catalog": 12 },
+    { "college": "SSE", "zh": "物理学", "en": "Physics", "tag": "PHY", "catalog": 19 },
+
+    { "college": "HSS", "zh": "应用心理学", "en": "Applied Psychology", "tag": "PSY", "catalog": 22 },
+    { "college": "HSS", "zh": "英语", "en": "English Studies", "tag": "ENG", "catalog": 13 },
+    { "college": "HSS", "zh": "国际组织与全球治理", "en": "International Organizations and Global Governance", "tag": "IOGG", "catalog": 5 },
+    { "college": "HSS", "zh": "翻译", "en": "Translation", "tag": "TRA", "catalog": 11 },
+    { "college": "HSS", "zh": "城市管理", "en": "Urban Management", "tag": "UMGT", "catalog": 4 },
+
+    { "college": "SDS", "zh": "计算机科学与技术", "en": "Computer Science and Engineering", "tag": "CSE", "catalog": 33 },
+    { "college": "SDS", "zh": "数据科学与大数据技术", "en": "Data Science and Big Data Technology", "tag": "DSBDT", "catalog": 38 },
+    { "college": "SDS", "zh": "统计学", "en": "Statistics", "tag": "STA", "catalog": 26 },
+    { "college": "SDS", "zh": "金融工程", "en": "Financial Engineering", "tag": "FE", "catalog": 105 },
+
+    { "college": "MED", "zh": "生物信息学", "en": "Bioinformatics", "tag": "BIFC", "catalog": 36 },
+    { "college": "MED", "zh": "生物科学", "en": "Biological Sciences", "tag": "BIOL", "catalog": 35 },
+    { "college": "MED", "zh": "生物医学工程", "en": "Biomedical Science and Engineering", "tag": "BME", "catalog": 36 },
+    { "college": "MED", "zh": "临床医学", "en": "Clinical Medicine", "tag": "CMED", "catalog": 78 },
+    { "college": "MED", "zh": "药学", "en": "Pharmaceutical Science", "tag": "PHAM", "catalog": 28 },
+
+    { "college": "MUS", "zh": "作曲与作曲技术理论", "en": "Music Composition and Theory", "tag": "MUSC", "catalog": 30 },
+    { "college": "MUS", "zh": "音乐学", "en": "Musicology", "tag": "MUSM", "catalog": 30 },
+    { "college": "MUS", "zh": "音乐表演", "en": "Music Performance", "tag": "MUSP_VOCE", "catalog": 27 },
+
+    { "college": "SAI", "zh": "人工智能", "en": "Artificial Intelligence", "tag": "AIE", "catalog": 14 }
+  ]
+}
