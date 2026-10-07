@@ -1,6 +1,6 @@
 # 自主选课与排课系统 / Course Selection & Timetable Planner
 
-> 仓库：https://github.com/unko-wn/cukhsz-course-planner
+> 仓库：https://github.com/unko-wn/cuhksz-course-planner
 > 克隆后**双击 `course-planner.html`** 即可使用，无需服务器、无第三方依赖。
 
 单文件网页应用：`course-planner.html`（双击用浏览器打开，无需服务器、无第三方依赖）。

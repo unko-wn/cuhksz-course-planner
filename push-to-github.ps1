@@ -3,12 +3,13 @@
 #   git push -u origin main                  <- 首选，remote 已配置好
 #   powershell -ExecutionPolicy Bypass -File .\push-to-github.ps1 -Owner unko-wn   <- 需要重建 remote 时
 #
-# 目标仓库：https://github.com/unko-wn/cukhsz-course-planner
+# 目标仓库：https://github.com/unko-wn/cuhksz-course-planner
+#   注意拼写是 cuhksz（c-u-h-k-s-z）；很容易写反成 cukhsz，那是个不存在的仓库。
 # 若远端仓库还不存在，先去 https://github.com/new 建一个空的（不要勾 README / .gitignore / License）。
 
 param(
     [string]$Owner = 'unko-wn',
-    [string]$RepoName = 'cukhsz-course-planner'
+    [string]$RepoName = 'cuhksz-course-planner'
 )
 
 # 关键：不要用 'Stop'。git 在正常分支（例如 remote 还不存在）也会往 stderr 写 error，
