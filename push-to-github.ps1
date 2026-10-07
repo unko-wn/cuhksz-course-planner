@@ -1,13 +1,14 @@
 ﻿# 把本仓库推送到 GitHub
 # 用法（在**你自己的** PowerShell 窗口里运行，不要在受限沙箱里跑）：
-#   powershell -ExecutionPolicy Bypass -File .\push-to-github.ps1
-#   powershell -ExecutionPolicy Bypass -File .\push-to-github.ps1 -Owner unko-wn
+#   git push -u origin main                  <- 首选，remote 已配置好
+#   powershell -ExecutionPolicy Bypass -File .\push-to-github.ps1 -Owner unko-wn   <- 需要重建 remote 时
 #
-# 前提：先在 https://github.com/new 建一个**空**仓库（不要勾选 README / .gitignore / License）。
+# 目标仓库：https://github.com/unko-wn/cukhsz-course-planner
+# 若远端仓库还不存在，先去 https://github.com/new 建一个空的（不要勾 README / .gitignore / License）。
 
 param(
-    [string]$Owner,
-    [string]$RepoName = 'cuhk-course-planner'
+    [string]$Owner = 'unko-wn',
+    [string]$RepoName = 'cukhsz-course-planner'
 )
 
 # 关键：不要用 'Stop'。git 在正常分支（例如 remote 还不存在）也会往 stderr 写 error，
